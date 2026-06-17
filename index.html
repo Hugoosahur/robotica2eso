@@ -1,176 +1,268 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 10 Camisetas Mundial 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top 10 Camisetas Mundial 2026</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        body{
-            background-color:#f4f4f4;
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        /* CABECERA */
-        header{
-            background-color:#006847;
-            color:white;
-            text-align:center;
-            padding:25px;
-        }
+body{
+    background:linear-gradient(135deg,#071a3d,#0d2f6b);
+    color:white;
+}
 
-        header h1{
-            font-size:2.5em;
-        }
+header{
+    background:#05142e;
+    text-align:center;
+    padding:40px;
+}
 
-        /* MENÚ */
-        nav{
-            background-color:#004d33;
-        }
+header h1{
+    font-size:3em;
+}
 
-        nav ul{
-            list-style:none;
-            display:flex;
-            justify-content:center;
-        }
+header p{
+    margin-top:10px;
+    font-size:1.2em;
+}
 
-        nav ul li{
-            margin:0 20px;
-        }
+nav{
+    background:#08214d;
+    position:sticky;
+    top:0;
+}
 
-        nav ul li a{
-            color:white;
-            text-decoration:none;
-            display:block;
-            padding:15px;
-        }
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
 
-        nav ul li a:hover{
-            background-color:#006847;
-        }
+nav ul li{
+    margin:0 15px;
+}
 
-        /* ZONA PRINCIPAL */
-        main{
-            padding:30px;
-        }
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
 
-        .contenedor{
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-            gap:20px;
-        }
+nav ul li a:hover{
+    background:#0d2f6b;
+    border-radius:8px;
+}
 
-        .tarjeta{
-            background:white;
-            border-radius:10px;
-            padding:20px;
-            box-shadow:0 2px 8px rgba(0,0,0,0.2);
-            transition:transform 0.3s;
-        }
+section{
+    padding:50px 30px;
+}
 
-        .tarjeta:hover{
-            transform:scale(1.03);
-        }
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
 
-        .tarjeta h3{
-            color:#006847;
-            margin-bottom:10px;
-        }
+.contenedor{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+}
 
-        /* PIE DE PÁGINA */
-        footer{
-            background-color:#004d33;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:20px;
-        }
-    </style>
+.enlace-tarjeta{
+    text-decoration:none;
+    color:inherit;
+}
+
+.tarjeta{
+    background:white;
+    color:#222;
+    border-radius:20px;
+    padding:25px;
+    min-height:300px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.tarjeta:hover{
+    transform:scale(1.05);
+}
+
+.tarjeta h3{
+    color:#0d2f6b;
+    margin-bottom:15px;
+}
+
+.tarjeta p{
+    line-height:1.6;
+}
+
+footer{
+    background:#05142e;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+</style>
 </head>
+
 <body>
 
-    <!-- CABECERA -->
-    <header>
-        <h1>⚽ Top 10 Camisetas Mundial 2026</h1>
-        <p>Las equipaciones más espectaculares del torneo</p>
-    </header>
+<header id="inicio">
+    <h1>⚽ Top 10 Camisetas Mundial 2026</h1>
+    <p>Las equipaciones más espectaculares del torneo</p>
+</header>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Ranking</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#ranking">Ranking</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
 
-    <!-- ZONA PRINCIPAL -->
-    <main>
-        <div class="contenedor">
+<section id="ranking">
+    <h2>🏆 Ranking de las Mejores Camisetas</h2>
 
+    <div class="contenedor">
+
+        <a class="enlace-tarjeta" href="https://imbictoz.com/wp-content/uploads/2025/11/camiseta-argentina-mundial-2026.jpg" target="_blank">
             <div class="tarjeta">
                 <h3>1. Argentina</h3>
-                <p>Diseño clásico con franjas celestes y blancas renovadas.</p>
+                <p>
+                    La camiseta de Argentina mantiene las clásicas franjas
+                    celestes y blancas. Es una de las equipaciones más
+                    reconocidas del mundo y simboliza la historia de los
+                    campeones mundiales.
+                </p>
+                <br>
+                <strong>👉 Haz clic para ver la imagen.</strong>
             </div>
+        </a>
 
+        <a class="enlace-tarjeta" href="https://store.fifa.com/cdn/shop/files/AURORA_IO2231-724_PHSFH001-1500.jpg?v=1780393718" target="_blank">
             <div class="tarjeta">
                 <h3>2. Brasil</h3>
-                <p>El icónico amarillo con detalles modernos en verde.</p>
+                <p>
+                    El legendario amarillo brasileño vuelve con un diseño
+                    moderno que representa la alegría y el fútbol ofensivo
+                    característico de Brasil.
+                </p>
+                <br>
+                <strong>👉 Haz clic para ver la imagen.</strong>
             </div>
+        </a>
 
+        <a class="enlace-tarjeta" href="https://camisetasmundial.com/wp-content/uploads/2026/01/camiseta-espana-mundial-2026-frontal.png" target="_blank">
             <div class="tarjeta">
                 <h3>3. España</h3>
-                <p>Rojo intenso con detalles dorados inspirados en la historia.</p>
+                <p>
+                    Diseño elegante en rojo intenso con detalles dorados
+                    inspirados en la historia y los éxitos de la selección
+                    española.
+                </p>
+                <br>
+                <strong>👉 Haz clic para ver la imagen.</strong>
             </div>
+        </a>
 
+        <a class="enlace-tarjeta" href="https://imbictoz.com/wp-content/uploads/2025/12/camiseta-francia-primera-equipacion-version-jugador-mundial-2026.jpg" target="_blank">
             <div class="tarjeta">
                 <h3>4. Francia</h3>
-                <p>Elegante camiseta azul con acabados sofisticados.</p>
+                <p>
+                    Una camiseta azul elegante con acabados modernos y gran
+                    calidad en los materiales utilizados para la competición.
+                </p>
+                <br>
+                <strong>👉 Haz clic para ver la imagen.</strong>
             </div>
+        </a>
 
-            <div class="tarjeta">
-                <h3>5. Alemania</h3>
-                <p>Diseño minimalista en blanco con detalles negros.</p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>6. Inglaterra</h3>
-                <p>Estilo tradicional con un toque moderno.</p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>7. Portugal</h3>
-                <p>Rojo y verde combinados en un diseño innovador.</p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>8. México</h3>
-                <p>Inspirada en la cultura mexicana con patrones únicos.</p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>9. Japón</h3>
-                <p>Detalles artísticos inspirados en el manga y la tradición japonesa.</p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>10. Marruecos</h3>
-                <p>Diseño elegante con elementos culturales del país.</p>
-            </div>
-
+        <div class="tarjeta">
+            <h3>5. Alemania</h3>
+            <p>
+                Diseño minimalista que combina tradición, innovación y
+                elegancia deportiva.
+            </p>
         </div>
-    </main>
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        Tu Nombre Apellido — 2º ESO
-    </footer>
+        <div class="tarjeta">
+            <h3>6. Inglaterra</h3>
+            <p>
+                Estilo clásico inglés con detalles modernos y materiales
+                preparados para el máximo rendimiento.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>7. Portugal</h3>
+            <p>
+                El rojo y verde portugués destacan en una camiseta moderna y
+                muy reconocible para los aficionados.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>8. México</h3>
+            <p>
+                Inspirada en la cultura mexicana con patrones únicos y colores
+                llenos de personalidad.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>9. Japón</h3>
+            <p>
+                Diseño artístico inspirado en la tradición japonesa y el estilo
+                moderno que caracteriza al país.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>10. Marruecos</h3>
+            <p>
+                Equipación elegante que incorpora detalles culturales propios
+                del país africano.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="galeria">
+    <h2>🖼️ Galería</h2>
+    <p style="text-align:center;">
+        Haz clic en cualquiera de las primeras cuatro tarjetas para abrir la
+        imagen de la camiseta en tamaño completo.
+    </p>
+</section>
+
+<section id="contacto">
+    <h2>📧 Contacto</h2>
+    <p style="text-align:center;">
+        Proyecto escolar realizado por Hugo Encinas.
+    </p>
+</section>
+
+<footer>
+    Hugo Encinas - 2º ESO © 2026
+</footer>
 
 </body>
 </html>
